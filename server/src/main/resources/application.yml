@@ -1,0 +1,9 @@
+# Default port for Eureka Servers
+server:
+  port: 8761
+# Prevents the eureka server from registering with other servers
+# https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-eureka-server.html#spring-cloud-eureka-server-standalone-mode
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
